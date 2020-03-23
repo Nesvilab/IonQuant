@@ -1,5 +1,5 @@
 ## What is IonQuant? 
-IonQuant is a label free quantification tool for TIMS-TOF PASEF data.
+IonQuant is a label free quantification tool for timsTOF PASEF DDA data.
 
 ## Why choose IonQuant?
 1. Fast
@@ -28,4 +28,7 @@ Options:
         --minfreq <float>      # Minimum required frequency of a ion being selected for protein quantification. Optional. Default: 0.5
         --tp <int>             # Number of ions used in quantifying each protein. If 0, using all ions. Optional. Default: 0
 ```
-        
+
+## Publication (preprint)
+[Fast quantitative analysis of timsTOF PASEF data with MSFragger and IonQuant](https://www.biorxiv.org/content/10.1101/2020.03.19.999334v1)
+
