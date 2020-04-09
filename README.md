@@ -19,6 +19,7 @@ Download stanalone JAR from [here](https://github.com/Nesvilab/IonQuant/releases
 ```shell
 java -jar IonQuant.jar <options> <.d/.mzML/.mzXML/.pepXML/_quant.csv files>
 Options:
+        --threads <integer>    # Number of used threads. Defalut: 0 (the number of logical cores)
         --mztol <float>        # MS1 tolerance in PPM. Optional. Default: 10.0
         --imtol <float>        # 1/K0 tolerance. Optional. Default: 0.05
         --rttol <float>        # Retention time tolerance. Unit: min. Optional. Default: 0.4
@@ -28,6 +29,7 @@ Options:
         --minfreq <float>      # Minimum required frequency of a ion being selected for protein quantification. Optional. Default: 0.5
         --tp <int>             # Number of ions used in quantifying each protein. If 0, using all ions. Optional. Default: 0
 ```
+**Note:** in some high-performance computing (HPC) servers, you may need to explectly specify `--threads <integer>` in case that Java cannot correctly get the logical core number.
 
 ## Publication (preprint)
 [Fast quantitative analysis of timsTOF PASEF data with MSFragger and IonQuant](https://www.biorxiv.org/content/10.1101/2020.03.19.999334v1)
