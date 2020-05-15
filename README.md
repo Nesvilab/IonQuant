@@ -19,15 +19,18 @@ Download stanalone JAR from [here](https://github.com/Nesvilab/IonQuant/releases
 ```shell
 java -jar IonQuant.jar <options> <.d/.mzML/.mzXML/.pepXML/_quant.csv files>
 Options:
-        --threads <integer>    # Number of used threads. Defalut: 0 (the number of logical cores)
-        --mztol <float>        # MS1 tolerance in PPM. Optional. Default: 10.0
-        --imtol <float>        # 1/K0 tolerance. Optional. Default: 0.05
-        --rttol <float>        # Retention time tolerance. Unit: min. Optional. Default: 0.4
-        --plot 0/1             # Plot traced features or not. Optional. Default: 0
-        --psm <string>         # Path to Philosopher's psm.tsv. Optional.
-        --multidir <string>    # Output dir for the multi experimental result. Optional.
-        --minfreq <float>      # Minimum required frequency of a ion being selected for protein quantification. Optional. Default: 0.5
-        --tp <int>             # Number of ions used in quantifying each protein. If 0, using all ions. Optional. Default: 0
+        --threads <integer>    # Number of threads. 0 = all logical cores. Default: 0
+        --mztol <float>        # MS1 tolerance in PPM. Default: 10.0
+        --imtol <float>        # 1/K0 tolerance. Default: 0.05
+        --rttol <float>        # Retention time tolerance. Unit: min. Default: 0.4
+        --seedmz 0/1           # M/Z used as the start point of tracing. 0 = calculated M/Z; 1 = observed M/Z. Default:
+        --minisotopes 1/2/3    # Required isotopes in feature extraction. Default: 2
+        --psm <string>         # Path to Philosopher's psm.tsv. One --psm indicates one psm.tsv and can have multiple --psm. Optional. Default: <blank>
+        --multidir <string>    # Output dir for the multi experimental result. Optional. Default: <blank>
+        --normalization 0/1    # Normalize the intensities across all runs. Default: 1
+        --minions <integer>    # Minimum ions required in quantifying proteins. Default: 1
+        --minfreq <float>      # Minimum required frequency of a ion being selected for protein quantification. Default: 0.5
+        --tp <int>             # Number of ions used in quantifying each protein. If 0, using all ions. Default: 3
 ```
 **Note:** in some high-performance computing (HPC) servers, you may need to explectly specify `--threads <integer>` in case that Java cannot correctly get the logical core number.
 
