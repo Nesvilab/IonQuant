@@ -9,6 +9,9 @@ IonQuant is a label free quantification tool for timsTOF PASEF DDA data.
 1. Java 1.8+.
 2. `ext` folder from [MSFragger](https://msfragger.arsci.com/upgrader/).
 
+## Download
+The latest IonQuant stanalong JAR can be download from [here](https://github.com/Nesvilab/IonQuant/releases/download/1.1.0/IonQuant-1.1.0.jar).
+
 ## Usage
 #### GUI
 1. Download [FragPipe](http://fragpipe.nesvilab.org/) from [here](https://github.com/Nesvilab/FragPipe/releases/latest).
