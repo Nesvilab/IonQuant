@@ -1,11 +1,11 @@
 IonQuant utilizes MSFTBX library, Univocity-parsers library, 
-Guava library, smile library, and Eclipse Collections library. 
+Guava library, smile library, JFreeChart library, SSJ library, and Eclipse Collections library. 
 
 Licenses applicable to those dependencies are as follows.
 
 ================================================================================
 
-MSFTBX, Univocity-parsers, Guava
+MSFTBX, Univocity-parsers, Guava, SSJ
 
 ================================================================================
 
@@ -188,7 +188,7 @@ Apache License
 
 ================================================================================
  
-smile
+smile, JFreeChart
  
 ================================================================================
 
