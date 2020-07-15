@@ -76,6 +76,7 @@ Options:
 <a href="https://www.mcponline.org/content/early/2020/07/02/mcp.TIR120.002048" target="_blank">Fast quantitative analysis of timsTOF PASEF data with MSFragger and IonQuant</a>
 <br>
 Fengchao Yu, Sarah E. Haynes, Guo Ci Teo, Dmitry M. Avtonomov, Daniel A. Polasky, Alexey I. Nesvizhskii
+<br>
 Molecular & Cellular Proteomics July 2, 2020, mcp.TIR120.002048; DOI: 10.1074/mcp.TIR120.002048
 
 
