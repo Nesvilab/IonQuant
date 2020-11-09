@@ -1,12 +1,21 @@
-IonQuant is a label free quantification tool for timsTOF PASEF DDA and non-timsTOF (e.g., Orbitrap) data. It supports match-between-runs (MBR) and light/heavy chemical labeling.
+IonQuant is a label free quantification tool for timsTOF PASEF DDA and non-timsTOF (e.g., Orbitrap) data. It supports false discovery (FDR) controlled match-between-runs (MBR) and light/heavy chemical labeling (e.g., SILAC, dimethyl labelling).
 
+### Workflow of peak tracing and quantification
 <img src="https://raw.githubusercontent.com/Nesvilab/IonQuant/master/doc/Fig1.jpg" width="600"/>
+
+### Workflow of FDR-controlled MBR
+<img src="https://raw.githubusercontent.com/Nesvilab/IonQuant/master/doc/fig4.jpg" width="600"/>
 
 ## It is fast
 <img src="https://raw.githubusercontent.com/Nesvilab/IonQuant/master/doc/fig2.jpg" width="600"/>
 
 ## It is accurate and sensitive
+
+### Quantification accuracy evaluation using the three-organism dataset
 <img src="https://raw.githubusercontent.com/Nesvilab/IonQuant/master/doc/fig3.jpg" width="600"/>
+
+### Quantified proteins and coefficient of variation (CV)
+<img src="https://raw.githubusercontent.com/Nesvilab/IonQuant/master/doc/fig5.jpg" width="600"/>
 
 ## System requirements
 1. Java 1.8+.
