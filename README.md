@@ -15,7 +15,7 @@ IonQuant is a label free quantification tool for timsTOF PASEF DDA and non-timsT
 **Note:** Bruker's native library needs [Visual C++ Redistributable for Visual Studio 2017](https://aka.ms/vs/16/release/VC_redist.x64.exe) in Windows. If you see an error saying cannot find Bruker native library, please try to install the Visual C++ redistibutable.
 
 ## Download
-The latest IonQuant standalone JAR can be downloaded from [here](https://github.com/Nesvilab/IonQuant/releases/download/1.4.4/IonQuant-1.4.4.jar).
+The latest IonQuant standalone JAR can be downloaded from [here](https://github.com/Nesvilab/IonQuant/releases/download/1.4.6/IonQuant-1.4.6.jar).
 
 ## Usage
 ### GUI
