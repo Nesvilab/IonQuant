@@ -31,7 +31,12 @@ The latest IonQuant standalone JAR can be downloaded from [here](https://github.
 1. Download [FragPipe](http://fragpipe.nesvilab.org/) from [here](https://github.com/Nesvilab/FragPipe/releases/latest).
 2. Follow the [tutorial](http://msfragger.nesvilab.org/tutorial_fragpipe.html#lfq-label-free-quantification).
 
-## Command line
+#### Tutorials:
+- [Using FragPipe coupled with MSFragger and IonQuant to analyze samples](https://msfragger.nesvilab.org/tutorial_fragpipe.html)
+- [Analyzing SILAC (or other labelling coupled with MS1-based quantification) samples with FragPipe](https://msfragger.nesvilab.org/tutorial_silac.html)
+- [Running MSstats using MSstats.csv from IonQuant](https://msfragger.nesvilab.org/tutorial_msstats.html)
+
+### Command line
 ```shell
 java -jar IonQuant.jar <options> --specdir <one directory to the spectral files> <.pepXML files>
 Options:
