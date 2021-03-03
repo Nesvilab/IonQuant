@@ -19,12 +19,12 @@ IonQuant is a fast and comprehensive tool for MS1 precursor intensity-based quan
 
 ## System requirements
 1. Java 1.8+.
-2. `ext` folder from [MSFragger](https://msfragger.arsci.com/upgrader/).
+2. `ext` folder from [MSFragger 3.2](https://msfragger.arsci.com/upgrader/).
 
 **Note:** Bruker's native library needs [Visual C++ Redistributable for Visual Studio 2017](https://aka.ms/vs/16/release/VC_redist.x64.exe) in Windows. If you see an error saying cannot find Bruker native library, please try to install the Visual C++ redistibutable.
 
 ## Download
-The latest IonQuant standalone JAR can be downloaded from [here](https://github.com/Nesvilab/IonQuant/releases/download/1.4.6/IonQuant-1.4.6.jar).
+The latest IonQuant standalone JAR can be downloaded from [here](https://github.com/Nesvilab/IonQuant/releases/download/1.5.5/IonQuant-1.5.5.jar).
 
 ## Usage
 ### GUI
@@ -38,18 +38,20 @@ The latest IonQuant standalone JAR can be downloaded from [here](https://github.
 
 ### Command line
 ```shell
-java -jar IonQuant.jar <options> --specdir <one directory to the spectral files> <.pepXML files>
+Usage:
+        java -jar IonQuant.jar <options> --specdir <one directory to the spectral files> <.pepXML files>
 Options:
         --specdir <string>     # Directory containing the spectral files (d/mzml/mzxml/raw). One --specdir indicates one spectral directory and can have multiple --specdir.
         --threads <integer>    # Number of threads. 0 = all logical cores. Default: 0
         --mztol <float>        # MS1 tolerance in PPM. Default: 10.0
         --imtol <float>        # 1/K0 tolerance. Default: 0.05
         --rttol <float>        # Retention time tolerance. Unit: min. Default: 0.4
-        --seedmz 0/1           # M/Z used as the start point of tracing. 0 = calculated M/Z; 1 = observed M/Z. Default:
+        --seedmz 0/1           # M/Z used as the start point of tracing. 0 = calculated M/Z; 1 = observed M/Z. Default: 0
         --psm <string>         # Path to Philosopher's psm.tsv. One --psm indicates one psm.tsv and can have multiple --psm. Optional. Default: <blank>
         --multidir <string>    # Output directory for the multi-experimental result. Optional. Default: <blank>
         --normalization 0/1    # Normalize the intensities across all runs. Default: 1
         --minisotopes 1/2/3    # Minimum isotopes required in feature extraction. Default: 2
+        --minscans <integer>   # Minimum MS1 scans required in feature extraction. Default: 3
         --minions <integer>    # Minimum ions required in quantifying proteins. Default: 2
         --excludemods <string> # Excluded modifications in quantifying peptide sequences and proteins. Format: <amino acid><mass>;... Default: <blank>
         --proteinquant 1/2     # Protein quantification algorithm. 1 = top-N, 2 = MaxLFQ. Default: 2
