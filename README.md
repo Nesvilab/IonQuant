@@ -29,12 +29,12 @@ The latest IonQuant standalone JAR can be downloaded from [here](https://github.
 ## Usage
 ### GUI
 1. Download [FragPipe](http://fragpipe.nesvilab.org/) from [here](https://github.com/Nesvilab/FragPipe/releases/latest).
-2. Follow the [tutorial](http://msfragger.nesvilab.org/tutorial_fragpipe.html#lfq-label-free-quantification).
+2. Follow the [tutorial](https://fragpipe.nesvilab.org/docs/tutorial_lfq.html).
 
 #### Tutorials:
-- [Using FragPipe coupled with MSFragger and IonQuant to analyze samples](https://msfragger.nesvilab.org/tutorial_fragpipe.html)
-- [Analyzing SILAC (or other labelling coupled with MS1-based quantification) samples with FragPipe](https://msfragger.nesvilab.org/tutorial_silac.html)
-- [Running MSstats using MSstats.csv from IonQuant](https://msfragger.nesvilab.org/tutorial_msstats.html)
+- [Using FragPipe coupled with MSFragger and IonQuant to analyze samples](https://fragpipe.nesvilab.org/docs/tutorial_fragpipe.html)
+- [Analyzing SILAC (or other labelling coupled with MS1-based quantification) samples with FragPipe](https://fragpipe.nesvilab.org/docs/tutorial_silac.html)
+- [Running MSstats using MSstats.csv from IonQuant](https://fragpipe.nesvilab.org/docs/tutorial_msstats.html)
 
 ### Command line
 ```shell
@@ -75,12 +75,16 @@ Options:
 ```
 **Note:** in some high-performance computing (HPC) servers, you may need to explicitly specify `--threads <integer>` in case that Java cannot correctly get the logical core number.
 
-## Publication
+## Publications
 <a href="https://doi.org/10.1074/mcp.tir120.002048" target="_blank">Fast quantitative analysis of timsTOF PASEF data with MSFragger and IonQuant</a>
 <br>
 Fengchao Yu, Sarah E. Haynes, Guo Ci Teo, Dmitry M. Avtonomov, Daniel A. Polasky, Alexey I. Nesvizhskii
 <br>
-Molecular & Cellular Proteomics July 2, 2020, mcp.TIR120.002048; DOI: 10.1074/mcp.TIR120.002048
+Molecular & Cellular Proteomics, 19 (2020), 1575-1585, DOI: 10.1074/mcp.TIR120.002048
 
-
+<a href="https://doi.org/10.1016/j.mcpro.2021.100077" target="_blank">IonQuant Enables Accurate and Sensitive Label-Free Quantification With FDR-Controlled Match-Between-Runs</a>
+<br>
+Fengchao Yu, Sarah E. Haynes, Alexey I. Nesvizhskii
+<br>
+Molecular & Cellular Proteomics, 20 (2021), 100077, DOI: 10.1016/j.mcpro.2021.100077
 
