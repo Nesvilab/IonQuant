@@ -1,3 +1,12 @@
+## 1.7.5 - 2020-07-22
+- Require Philosopher 4.0.0+.
+- Support `library` and `lib` keywords in the experiment names to recognize library runs. Library runs will always be used as donor runs.
+- Support prmPASEF.
+- Disable MBR when there is only one run.
+- Change the default value of `mbrtoprun` to 100000.
+- Add `filelist` flag to bypass command length limitation in Windows.
+- Various minor bug fixes and improvements.
+
 ## 1.4.4 - 2020-09-29
 - Supporting SILAC and other isotopic labeled data.
 - Print more information about match-between-runs.

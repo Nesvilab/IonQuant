@@ -19,12 +19,12 @@ IonQuant is a fast and comprehensive tool for MS1 precursor intensity-based quan
 
 ## System requirements
 1. Java 1.8+.
-2. `ext` folder from [MSFragger 3.2](https://msfragger.arsci.com/upgrader/).
+2. `ext` folder from [MSFragger 3.3](https://msfragger.arsci.com/upgrader/).
 
 **Note:** Bruker's native library needs [Visual C++ Redistributable for Visual Studio 2017](https://aka.ms/vs/16/release/VC_redist.x64.exe) in Windows. If you see an error saying cannot find Bruker native library, please try to install the Visual C++ redistibutable.
 
 ## Download
-The latest IonQuant standalone JAR can be downloaded from [here](https://github.com/Nesvilab/IonQuant/releases/download/1.5.5/IonQuant-1.5.5.jar).
+The latest IonQuant standalone JAR can be downloaded from [here](https://github.com/Nesvilab/IonQuant/releases/download/1.7.5/IonQuant-1.7.5.jar).
 
 ## Usage
 ### GUI
@@ -40,6 +40,8 @@ The latest IonQuant standalone JAR can be downloaded from [here](https://github.
 ```shell
 Usage:
         java -jar IonQuant.jar <options> --specdir <one directory to the spectral files> <.pepXML files>
+        OR
+        java -jar IonQuant.jar <options> --filelist <path to filelist file>
 Options:
         --specdir <string>     # Directory containing the spectral files (d/mzml/mzxml/raw). One --specdir indicates one spectral directory and can have multiple --specdir.
         --threads <integer>    # Number of threads. 0 = all logical cores. Default: 0
@@ -61,7 +63,7 @@ Options:
         --mbr 0/1              # Perform match-between-runs. Default: 0
         --mbrrttol <float>     # Retention time tolerance used in match-between-runs. Unit: min. Default: 1.0
         --mbrimtol <float>     # 1/K0 tolerance used in match-between-runs. Default: 0.05
-        --mbrtoprun <integer>  # Maximum number of donor runs for each acceptor run. Default: 10
+        --mbrtoprun <integer>  # Maximum number of donor runs for each acceptor run. Default: 100000
         --mbrmincorr <float>   # Minimum correlation coefficient between a donor run and its acceptor run. Default: 0
         --ionmobility 0/1      # The data has ion mobility information or not (for conventional LC-MS data). Default: 0
         --ionfdr <float>       # Transferred ion false discovery rate threshold. Default: 0.01
@@ -72,6 +74,7 @@ Options:
         --heavy <string>       # Heavy labelling mass. Format: <amino acids><mass>;<amino acids><mass>;... Optional. Default: <blank>
         --requantify 0/1       # Re-quantify unidentified feature based on identified feature. Only activate when --light, --medium, or --heavy is not empty. Default: 1
         --writeindex 0/1       # Write indexed file on disk for further usage. 0 = no, 1 = yes. Default: 0
+        --filelist <string>    # A file list file containing --specdir, --psm, and --pepxml. Default: <blank>
 ```
 **Note:** in some high-performance computing (HPC) servers, you may need to explicitly specify `--threads <integer>` in case that Java cannot correctly get the logical core number.
 
