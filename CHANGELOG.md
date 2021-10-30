@@ -1,4 +1,19 @@
-## 1.7.5 - 2020-07-22
+## 1.7.16 - 2021-10-30
+- Generate `combined_ion.tsv`, `combined_modified_peptide.tsv`, and `combined_peptide.tsv`
+- Generate modification site reports
+- Add `locprob` flag to control modification probability threshold (require running PTMProphet beforehand)
+- Retire `proteinquant` flag. Add `maxlfq` flag.
+- Make `MSstats.csv` support label quant (e.g., SILAC). If there are mixture of light and heavy in on peptide, using `NA` for the intensity
+- Always write top-N intensity to protein report. Write MaxLFQ intensity when `maxlfq=1`
+- Always use `minions=1` for top-N intensity
+- Support using `quantindex` file as input
+- Check the integrity of `quantindex` file before reading it
+- Improve the total intensity calculation
+- Increase the allowed gap of modification mass correction to 4 Da to support the PTM-Shepherd's glycan list.
+- Upgrade some libraries
+- Various minor bug fixes and improvements
+
+## 1.7.5 - 2021-07-22
 - Require Philosopher 4.0.0+.
 - Support `library` and `lib` keywords in the experiment names to recognize library runs. Library runs will always be used as donor runs.
 - Support prmPASEF.
