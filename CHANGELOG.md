@@ -22,6 +22,26 @@
 - Add `filelist` flag to bypass command length limitation in Windows.
 - Various minor bug fixes and improvements.
 
+## 1.5.5 - 2021-03-02
+- Add high-field asymmetric waveform ion mobility spectrometry (FAIMS) support.
+- Remove `log10(KL_negative_1)`, `log10(KL_negative_2)`, `log10(intensity) diff`, `correlation between runs`, `matched run percentage` scores to make the LDA modeling more robust.
+- Improve mixture distribution modeling.
+- Add `minscans` parameter.
+- Improve peak tracing with resampling and Savitzky–Golay smoothing.
+- Substract background noise from the intensity.
+- Improve the normalization to be more robust.
+- Generate `protein_label_quant.tsv`. 
+- Use log-ratio median to normalize peptide and protein log-ratios in label quantification.
+- Always use `minions = 1` for the `top-N` protein intensity calculation algorithm (`proteinquant = 1`).
+- Using the log-ratios within `[-log2(1.5), log2(1.5)]` to perform normalization in label quant.
+- Suppress a warning due to a bug in Philosopher.
+- Various bug fixes and improvements.
+
+## 1.4.6 - 2020-11-09
+- Don't stop when there is a protein with no PSM. When protein FDR threshold is 1, there may be proteins with no PSM passing 1% PSM FDR.
+- Change O's mass to 255.15829.
+- Remove a randomness from the algorithm.
+
 ## 1.4.4 - 2020-09-29
 - Supporting SILAC and other isotopic labeled data.
 - Print more information about match-between-runs.

@@ -26,6 +26,8 @@ IonQuant is a fast and comprehensive tool for MS1 precursor intensity-based quan
 ## Download
 The latest IonQuant standalone can be downloaded from [here](https://msfragger.arsci.com/ionquant/).
 
+Changelog can be found from [here](https://github.com/Nesvilab/IonQuant/blob/master/CHANGELOG.md).
+
 ## Usage
 ### GUI
 1. Download [FragPipe](http://fragpipe.nesvilab.org/) from [here](https://github.com/Nesvilab/FragPipe/releases/latest).
