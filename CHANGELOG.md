@@ -1,3 +1,15 @@
+## 1.8.0 - 2022-05-27
+- Require Java 9+
+- Generate `combined_ion_label_quant.tsv`, `combined_modified_peptide_label_quant.tsv`, and `combined_protein_label_quant.tsv`
+- `MSstats.tsv` supports label quant
+- No longer require pepXML files
+- Various minor bug fixes and improvements
+
+## 1.7.17 - 2021-11-16
+- Improve the logic of picking input spectral files from the folder
+- Change an error message to warning
+- Various minor bug fixes and improvements
+
 ## 1.7.16 - 2021-10-30
 - Generate `combined_ion.tsv`, `combined_modified_peptide.tsv`, and `combined_peptide.tsv`
 - Generate modification site reports

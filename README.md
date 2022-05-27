@@ -19,7 +19,7 @@ IonQuant is a fast and comprehensive tool for MS1 precursor intensity-based quan
 
 ## System requirements
 1. Java 1.9+.
-2. `ext` folder from [MSFragger 3.4](https://msfragger.arsci.com/upgrader/).
+2. `ext` folder from [MSFragger 3.5](https://msfragger.arsci.com/upgrader/).
 
 **Note:** Bruker's native library needs [Visual C++ Redistributable for Visual Studio 2017](https://aka.ms/vs/16/release/VC_redist.x64.exe) in Windows. If you see an error saying cannot find Bruker native library, please try to install the Visual C++ redistibutable.
 
@@ -41,7 +41,7 @@ Changelog can be found from [here](https://github.com/Nesvilab/IonQuant/blob/mas
 ### Command line
 ```shell
 Usage:
-        java -jar IonQuant.jar <options> --specdir <one directory to the spectral files> <.pepXML files>
+        java -jar IonQuant.jar <options> --specdir <one directory to the spectral files> --psm <path to psm.tsv file> --psm <path to psm.tsv file>...
         OR
         java -jar IonQuant.jar <options> --filelist <path to filelist file>
 Options:
@@ -51,14 +51,15 @@ Options:
         --imtol <float>        # 1/K0 tolerance. Default: 0.05
         --rttol <float>        # Retention time tolerance. Unit: min. Default: 0.4
         --seedmz 0/1           # M/Z used as the start point of tracing. 0 = calculated M/Z; 1 = observed M/Z. Default: 0
-        --psm <string>         # Path to Philosopher's psm.tsv. One --psm indicates one psm.tsv and can have multiple --psm. Optional. Default: <blank>
+        --psm <string>         # Path to Philosopher's psm.tsv. One --psm indicates one psm.tsv and can have multiple --psm.
         --multidir <string>    # Output directory for the multi-experimental result. Optional. Default: <blank>
         --normalization 0/1    # Normalize the intensities across all runs. Default: 1
         --minisotopes 1/2/3    # Minimum isotopes required in feature extraction. Default: 2
         --minscans <integer>   # Minimum MS1 scans required in feature extraction. Default: 3
         --minions <integer>    # Minimum ions required in quantifying proteins. Only for MaxLFQ intensity. Default: 2
         --excludemods <string> # Excluded modifications in quantifying peptide sequences and proteins. Format: <amino acid><mass>;... Default: <blank>
-        --maxlfq 0/1           # Use MaxLFQ algorithm to calculate intensities. 0 = no, 1 = yes. Default: 1
+        --maxlfq 0/1           # Calculate MaxLFQ intensity. 0 = no, 1 = yes. Default: 1
+        --ibaq 0/1             # [experimental] Calculate iBAQ intensity. The iBAQ intensity is normalized by the protein length, not the number of theoretical peptides. 0 = no, 1 = yes. Default: 0
         --minexps <int>        # Minimum experiments in picking an ion for quantifying proteins. Only for intensity, not for MaxLFQ intensity. Default: 2
         --minfreq <float>      # Minimum required frequency of an ion being selected for protein quantification. Only for intensity, not for MaxLFQ intensity. Default: 0.5
         --tp <int>             # Number of ions used in quantifying each protein. If 0, using all ions. For intensity, not for MaxLFQ intensity. Default: 3
@@ -77,7 +78,8 @@ Options:
         --requantify 0/1       # Re-quantify unidentified feature based on identified feature. Only activate when --light, --medium, or --heavy is not empty. Default: 1
         --writeindex 0/1       # Write indexed file on disk for further usage. 0 = no, 1 = yes. Default: 0
         --locprob <float>      # Localization probability threshold. Default: 0
-        --filelist <string>    # A file list file containing --specdir, --psm, and --pepxml. Default: <blank>
+        --filelist <string>    # A file list file containing --specdir, and --psm. Default: <blank>
+        --uniqueness 0/1/2     # Peptide-protein uniqueness. 0 = unique+razor, 1 = unique only, 2 = all. Default: 0
 ```
 **Note:** in some high-performance computing (HPC) servers, you may need to explicitly specify `--threads <integer>` in case that Java cannot correctly get the logical core number.
 
