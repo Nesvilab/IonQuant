@@ -1,3 +1,15 @@
+## 1.8.9 - 2022-12-02
+- Require Java 9+
+- Write compensation voltage to `ion.tsv`
+- Add `--modlist` parameter to take a list of mod masses to reduce the discrepancy issue
+- Set the default value of `--mbrtoprun` to 10
+- Change the default value of `--minexp` to 1
+- Change the default values of `--tp` and `--minfreq` to 0
+- Change the total intensity from the average of non-zero values back to summation of all isotopic intensities
+- Do not write entries from the contaminant proteins to the reprint reports
+- Print an error message when there are more than one run in an experiment for label quantification
+- Various minor bug fixes and improvements
+
 ## 1.8.0 - 2022-05-27
 - Require Java 9+
 - Generate `combined_ion_label_quant.tsv`, `combined_modified_peptide_label_quant.tsv`, and `combined_protein_label_quant.tsv`
@@ -21,7 +33,8 @@
 - Support using `quantindex` file as input
 - Check the integrity of `quantindex` file before reading it
 - Improve the total intensity calculation
-- Increase the allowed gap of modification mass correction to 4 Da to support the PTM-Shepherd's glycan list.
+- Increase the allowed gap of modification mass correction to 4 Da to support the PTM-Shepherd's glycan list
+- Improve the total intensity calculation by taking the average of non-zero values to remove the effect due to different isotope counts
 - Upgrade some libraries
 - Various minor bug fixes and improvements
 
