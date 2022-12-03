@@ -1,4 +1,4 @@
-## 1.8.9 - 2022-12-02
+## 1.8.9 - 2022-12-03
 - Require Java 9+
 - Write compensation voltage to `ion.tsv`
 - Add `--modlist` parameter to take a list of mod masses to reduce the discrepancy issue
