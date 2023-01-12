@@ -1,3 +1,7 @@
+## 1.8.10 - 2023-01-12
+- Fix a crash when the first scan number is a big value
+- Various minor bug fixes and improvements
+
 ## 1.8.9 - 2022-12-03
 - Require Java 9+
 - Write compensation voltage to `ion.tsv`
