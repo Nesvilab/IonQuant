@@ -1,3 +1,16 @@
+## 1.9.8 - 2023-05-31
+- Add MBR support for the MS1-based label quantification
+- Support fractionated data for the MS1-based label quantification
+- Add apex RT, CV, and IM columns to `combined_ion.tsv` file
+- Add `match type` column to some tsv files
+- For FAIMS data, `ion = peptide + charge + cv`
+- Print the number of transferred ions to console
+- Big improvement on the LDA and mixture distribution modeling
+- Overhaul the indexing of PSM, ion, peptide, and protein
+- Improve the min scans filtering criteria
+- Improve the isotope distribution filtering criteria for MBR
+- Various bug fixes and improvements
+
 ## 1.8.10 - 2023-01-12
 - Fix a crash when the first scan number is a big value
 - Various minor bug fixes and improvements
