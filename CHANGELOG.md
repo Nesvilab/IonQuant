@@ -1,3 +1,15 @@
+## 1.10.12 - 2023-12-XX
+- Add support for multiple ranks per scan
+- Add support for isobaric labelling. Add several new flags for isobaric labelling quantification.
+- Significantly improve the ddaPASEF .d loading speed
+- Propagate modification localization info to LFQ MSstats files
+- Add `--perform-ms1quant` and `--site-reports` flag
+- Add `combined_site_` before the site report file name
+- Make the MBR ion probability threshold always `>= 0.5`
+- Do not generate N/C-term modification site report
+- Remove LC-MS file checking
+- Various bug fixes and improvements
+
 ## 1.9.8 - 2023-05-31
 - Add MBR support for the MS1-based label quantification
 - Support fractionated data for the MS1-based label quantification
