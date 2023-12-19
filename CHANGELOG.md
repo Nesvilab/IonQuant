@@ -1,4 +1,4 @@
-## 1.10.12 - 2023-12-XX
+## 1.10.12 - 2023-12-19
 - Add support for multiple ranks per scan
 - Add support for isobaric labelling. Add several new flags for isobaric labelling quantification.
 - Significantly improve the ddaPASEF .d loading speed
