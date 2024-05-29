@@ -1,3 +1,16 @@
+## 1.10.27 - 2024-05-29
+- Require Java 11+
+- Calculate intensity and MaxLFQ intensity for MS1-based label quant
+- Fully support MSstatsPTM
+- Generate site reports with there are on PTMProphet localization info
+- Add DiLeu-12 in the isobaric labeling list
+- Support both `PeptideProphet Probability` and `Probability` column names
+- Add `--msstats` 
+- Set the default value of minions to 1
+- Minor improve the MBR mixture modeling
+- Significantly improved the Thermo raw file loading speed
+- Various bug fixes and improvements
+
 ## 1.10.12 - 2023-12-19
 - Add support for multiple ranks per scan
 - Add support for isobaric labelling. Add several new flags for isobaric labelling quantification.
