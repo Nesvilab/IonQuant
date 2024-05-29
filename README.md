@@ -49,9 +49,10 @@ Options:
         --perform-isoquant 0/1 # Perform isobaric labeling quantification. 0 = no, 1 = yes. Default: 0
         --isotol <float>       # MS2 tolerance in ppm. Default: 10
         --isolevel <int>       # Isobaric quantification level. 2 = MS2, 3 = MS3. Default: 2
-        --isotype <string>     # Isobaric quantification type. Case insensitive. Support iTRAQ-4, iTRAQ-8, TMT-0, TMT-2, TMT-6, TMT-10, TMT-11, TMT-16, TMT-18, sCLIP-6, iBT-16. Default: TMT-10
+        --isotype <string>     # Isobaric quantification type. Case insensitive. Support iTRAQ-4, iTRAQ-8, TMT-0, TMT-2, TMT-6, TMT-10, TMT-11, TMT-16, TMT-18, sCLIP-6, iBT-16, DiLeu-12, DiLeu-1. Default: TMT-10
         --annotation <string>  # Annotation file info for the isobaric quantification. Format: <path to psm.tsv>=<path to annotation file>. One --annotation indicates one annotation file and can have multiple --annotation. Default: <blank>
         --site-reports 0/1     # Generate site reports. 0 = no, 1 = yes. The psm.tsv need to have the modification localization modification columns. Default: 1
+        --msstats 0/1          # Generate MSstats input files. 0 = no, 1 = yes. Default: 0
         --threads <integer>    # Number of threads. 0 = all logical cores. Default: 0
         --mztol <float>        # MS1 tolerance in PPM. Default: 10.0
         --imtol <float>        # 1/K0 tolerance. Default: 0.05
@@ -61,7 +62,7 @@ Options:
         --normalization 0/1    # Normalize the intensities across all runs. Default: 1
         --minisotopes 1/2/3    # Minimum isotopes required in feature extraction. Default: 2
         --minscans <integer>   # Minimum MS1 scans required in feature extraction. Default: 3
-        --minions <integer>    # Minimum ions required in quantifying proteins. Only for MaxLFQ intensity. Default: 2
+        --minions <integer>    # Minimum ions required in quantifying proteins. Only for MaxLFQ intensity. Default: 1
         --excludemods <string> # Excluded modifications in quantifying peptide sequences and proteins. Format: <amino acid><mass>;... Default: <blank>
         --maxlfq 0/1           # Calculate MaxLFQ intensity. 0 = no, 1 = yes. Default: 1
         --ibaq 0/1             # [experimental] Calculate iBAQ intensity. The iBAQ intensity is normalized by the protein length, not the number of theoretical peptides. 0 = no, 1 = yes. Default: 0
