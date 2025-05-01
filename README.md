@@ -1,4 +1,4 @@
-IonQuant is a fast and comprehensive tool for MS1 precursor intensity-based quantification for timsTOF PASEF DDA and non-timsTOF (e.g., Orbitrap) data. It enables label-free quantification with false discovery (FDR) controlled match-between-runs (MBR). It can also be used for quantification in labelling-based experiments such as those involving SILAC, dimethyl, or similar labelling strategies. IonQuant is available as part of [FragPipe](http://fragpipe.nesvilab.org/).  
+IonQuant is a fast and comprehensive tool for MS1 precursor intensity-based quantification for timsTOF PASEF DDA and non-timsTOF (e.g., Orbitrap) data. It enables label-free quantification with false discovery (FDR) controlled match-between-runs (MBR). It can also be used for quantification in labelling-based experiments such as those involving SILAC, dimethyl, or similar labelling strategies. IonQuant is available as a stand-alone tool or it can be run within [FragPipe](http://fragpipe.nesvilab.org/) computational platform.  
 
 ### Workflow of peak tracing and quantification
 <img src="https://raw.githubusercontent.com/Nesvilab/IonQuant/master/doc/Fig1.jpg" width="600"/>
@@ -24,8 +24,13 @@ IonQuant is a fast and comprehensive tool for MS1 precursor intensity-based quan
 
 **Note:** Bruker's native library needs [Visual C++ Redistributable for Visual Studio 2017](https://aka.ms/vs/16/release/VC_redist.x64.exe) in Windows. If you see an error saying cannot find Bruker native library, please try to install the Visual C++ redistibutable.
 
+### License
+IonQuant is available freely for __academic research__, __non-commercial__ or __educational__ purposes under [academic license](https://msfragger.arsci.com/upgrader/MSFragger-LICENSE.pdf) [here](https://msfragger.arsci.com/ionquant/).
+
+Other uses require a __commercial__ license that can be obtained by visiting [Fragmatics](https://www.fragmatics.com) or emailing at info@fragmatics.com.
+
 ## Download
-The latest IonQuant can be downloaded from [here](https://msfragger.arsci.com/ionquant/).
+Academic users can downloaded IonQuant from [here](https://msfragger.arsci.com/ionquant/). Comercial users must contact Fragmatics to obtain the executable of the program. 
 
 ## Changelog
 Changelog can be found from [here](https://github.com/Nesvilab/IonQuant/blob/master/CHANGELOG.md).
