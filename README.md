@@ -24,8 +24,8 @@ IonQuant is a fast and comprehensive tool for MS1 precursor intensity-based quan
 
 **Note:** Bruker's native library needs [Visual C++ Redistributable for Visual Studio 2017](https://aka.ms/vs/16/release/VC_redist.x64.exe) in Windows. If you see an error saying cannot find Bruker native library, please try to install the Visual C++ redistibutable.
 
-### License
-IonQuant is available freely for __academic research__, __non-commercial__ or __educational__ purposes under [academic license](https://msfragger.arsci.com/upgrader/MSFragger-LICENSE.pdf) [here](https://msfragger.arsci.com/ionquant/).
+## License
+IonQuant is available freely for __academic research__, __non-commercial__ or __educational__ purposes under [academic license](https://msfragger.arsci.com/upgrader/MSFragger-LICENSE.pdf).
 
 Other uses require a __commercial__ license that can be obtained by visiting [Fragmatics](https://www.fragmatics.com) or emailing at info@fragmatics.com.
 
