@@ -54,7 +54,7 @@ Options:
         --perform-isoquant 0/1 # Perform isobaric labeling quantification. 0 = no, 1 = yes. Default: 0
         --isotol <float>       # MS2 tolerance in ppm. Default: 10
         --isolevel <int>       # Isobaric quantification level. 2 = MS2, 3 = MS3. Default: 2
-        --isotype <string>     # Isobaric quantification type. Case insensitive. Support iTRAQ-4, iTRAQ-8, TMT-0, TMT-2, TMT-6, TMT-10, TMT-11, TMT-16, TMT-18, sCLIP-6, iBT-16, DiLeu-12, DiLeu-1. Default: TMT-10
+        --isotype <string>     # Isobaric quantification type. Case insensitive. Support iTRAQ-4, iTRAQ-8, TMT-0, TMT-2, TMT-6, TMT-10, TMT-11, TMT-16, TMT-18, TMT-35, sCLIP-6, iBT-16, DiLeu-12, DiLeu-1, DeAla-13. Default: TMT-10
         --annotation <string>  # Annotation file info for the isobaric quantification. Format: <path to psm.tsv>=<path to annotation file>. One --annotation indicates one annotation file and can have multiple --annotation. Default: <blank>
         --site-reports 0/1     # Generate site reports. 0 = no, 1 = yes. The psm.tsv need to have the modification localization modification columns. Default: 1
         --msstats 0/1          # Generate MSstats input files. 0 = no, 1 = yes. Default: 0
@@ -86,11 +86,13 @@ Options:
         --light <string>       # Light labelling mass. Format: <amino acids><mass>;<amino acids><mass>;... Optional. Default: <blank>
         --medium <string>      # Medium labelling mass. Format: <amino acids><mass>;<amino acids><mass>;... Optional. Default: <blank>
         --heavy <string>       # Heavy labelling mass. Format: <amino acids><mass>;<amino acids><mass>;... Optional. Default: <blank>
+        --formula <string>     # List the formula of the modifications used in the data. Required if want to perform isotope-labeling quantification. Format: <chemical composition>;<chemical composition>... example: C(2)H(2)O;HO(3)P;2H(4)C(2). Default: <blank>
         --requantify 0/1       # Re-quantify unidentified feature based on identified feature. Only activate when --light, --medium, or --heavy is not empty. Default: 1
         --writeindex 0/1       # Write indexed file on disk for further usage. 0 = no, 1 = yes. Default: 0
         --locprob <float>      # Localization probability threshold. Default: 0
         --filelist <string>    # A file containing flags. Default: <blank>
         --uniqueness 0/1/2     # Peptide-protein uniqueness. 0 = unique+razor, 1 = unique only, 2 = all. Default: 0
+        --intensitymode 0/1  # The mode to calculate the ion intensity. 0 = apex, 1 = area. Default: 0
         --modlist <string>     # A file lists modification masses. Those masses are used to remove the mass discrepancy due to rounding errors. Default: <blank>
 ```
 

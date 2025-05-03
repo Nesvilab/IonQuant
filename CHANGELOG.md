@@ -1,3 +1,19 @@
+## 1.11.9 - 2025-05-03
+- Require Java 11+
+- Support the timsTOF ddaPASEF isobaric-labeling quant
+- Add TMT 35-plex support
+- Add the chemical formula support to the isotopic label quant with the `--formula` parameter
+- Significantly improve the quantification accuracy and precision
+- Significantly optimize the memory footprint for indexing
+- Refactor the index writer to make it faster
+- Write the peak resolution and noise to the psm.tsv for the isobaric labelling
+- Write apex RT and IM, fwhm RT and IM, and traced scans to ion.tsv and combined_ion.tsv
+- Write detailed RT and IM information to psm, ion, and combined ion tables
+- Write traced scans, apex scan number, and parent scan number to PSM tables
+- Write peptide start, end, prev AA and next AA to label quant tables
+- Add "Intensity " prefix to the TMT channel intensity column names
+- Various bug fixes and improvements
+
 ## 1.10.27 - 2024-05-29
 - Require Java 11+
 - Calculate intensity and MaxLFQ intensity for MS1 labelling-based quantification
