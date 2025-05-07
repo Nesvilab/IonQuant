@@ -6,31 +6,32 @@ IonQuant is a fast and comprehensive tool for MS1 precursor intensity-based quan
 ### Workflow of FDR-controlled MBR
 <img src="https://raw.githubusercontent.com/Nesvilab/IonQuant/master/doc/fig4.jpg" width="600"/>
 
+## It is accurate and sensitive
+### Quantification accuracy and precision evaluation using the PXD003881 (IonStar) dataset
+<img src="https://raw.githubusercontent.com/Nesvilab/IonQuant/master/doc/fig3.jpg" width="600"/>
+
+<img src="https://raw.githubusercontent.com/Nesvilab/IonQuant/master/doc/fig5.jpg" width="600"/>
+
+### Quantification accuracy and precision evaluation using the PXD028735 dataset
+<img src="https://raw.githubusercontent.com/Nesvilab/IonQuant/master/doc/fig6.jpg" width="600"/>
+
 ## It is fast
 <img src="https://raw.githubusercontent.com/Nesvilab/IonQuant/master/doc/fig2.jpg" width="600"/>
 
-## It is accurate and sensitive
-
-### Quantification accuracy evaluation using the three-organism dataset
-<img src="https://raw.githubusercontent.com/Nesvilab/IonQuant/master/doc/fig3.jpg" width="600"/>
-
-### Quantified proteins and coefficient of variation (CV)
-<img src="https://raw.githubusercontent.com/Nesvilab/IonQuant/master/doc/fig5.jpg" width="600"/>
-
 ## System requirements
-1. Java 1.9+.
-2. `ext` folder from [the latest MSFragger](https://msfragger.arsci.com/upgrader/).
+1. Java 11+.
+2. `ext` folder from [the latest MSFragger](https://msfragger-upgrader.nesvilab.org/upgrader/).
 3. The latest FragPipe from [here](https://github.com/Nesvilab/FragPipe/releases/latest) (optional).
 
 **Note:** Bruker's native library needs [Visual C++ Redistributable for Visual Studio 2017](https://aka.ms/vs/16/release/VC_redist.x64.exe) in Windows. If you see an error saying cannot find Bruker native library, please try to install the Visual C++ redistibutable.
 
 ## License
-IonQuant is available freely for __academic research__, __non-commercial__ or __educational__ purposes under [academic license](https://msfragger.arsci.com/upgrader/MSFragger-LICENSE.pdf).
+IonQuant is available freely for __academic research__, __non-commercial__ or __educational__ purposes under [academic license](https://msfragger-upgrader.nesvilab.org/ionquant/LICENSE-ACADEMIC.pdf).
 
 Other uses require a __commercial__ license that can be obtained by visiting [Fragmatics](https://www.fragmatics.com) or emailing at info@fragmatics.com.
 
 ## Download
-Academic users can downloaded IonQuant from [here](https://msfragger.arsci.com/ionquant/). Comercial users must contact Fragmatics to obtain the executable of the program. 
+Academic users can downloaded IonQuant from [here](https://msfragger-upgrader.nesvilab.org/ionquant/). Comercial users must contact Fragmatics to obtain the executable of the program. 
 
 ## Changelog
 Changelog can be found from [here](https://github.com/Nesvilab/IonQuant/blob/master/CHANGELOG.md).
@@ -40,7 +41,7 @@ Changelog can be found from [here](https://github.com/Nesvilab/IonQuant/blob/mas
 2. Follow the [tutorial](https://fragpipe.nesvilab.org/docs/tutorial_lfq.html) (recommended).
 
 ### Users can also run IonQuant standalone in command line interface
-1. Download the standalone zip file from [here](https://msfragger.arsci.com/ionquant/).
+1. Download the standalone zip file from [here](https://msfragger-upgrader.nesvilab.org/ionquant/).
 2. Run `java -jar IonQuant.jar` to print the help document.
 
 ```shell
@@ -92,7 +93,7 @@ Options:
         --locprob <float>      # Localization probability threshold. Default: 0
         --filelist <string>    # A file containing flags. Default: <blank>
         --uniqueness 0/1/2     # Peptide-protein uniqueness. 0 = unique+razor, 1 = unique only, 2 = all. Default: 0
-        --intensitymode 0/1  # The mode to calculate the ion intensity. 0 = apex, 1 = area. Default: 0
+        --intensitymode 0/1    # The mode to calculate the ion intensity. 0 = apex, 1 = area. Default: 0
         --modlist <string>     # A file lists modification masses. Those masses are used to remove the mass discrepancy due to rounding errors. Default: <blank>
 ```
 
