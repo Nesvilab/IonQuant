@@ -1,3 +1,7 @@
+## 1.11.11 - 2025-06-30
+- Various bug fixes and improvements
+
+
 ## 1.11.9 - 2025-05-03
 - Require Java 11+
 - Support the timsTOF ddaPASEF isobaric-labeling quant
