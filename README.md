@@ -54,8 +54,8 @@ Options:
         --perform-ms1quant 0/1 # Perform MS1 quantification. 0 = no, 1 = yes. Default: 1
         --perform-isoquant 0/1 # Perform isobaric labeling quantification. 0 = no, 1 = yes. Default: 0
         --isotol <float>       # MS2 tolerance in ppm. Default: 10
-        --isolevel <int>       # Isobaric quantification level. 2 = MS2, 3 = MS3. Default: 2
-        --isotype <string>     # Isobaric quantification type. Case insensitive. Support iTRAQ-4, iTRAQ-8, TMT-0, TMT-2, TMT-6, TMT-10, TMT-11, TMT-16, TMT-18, TMT-35, sCLIP-6, iBT-16, DiLeu-12, DiLeu-1, DeAla-13. Default: TMT-10
+        --isolevel <int>       # Isobaric quantification level. 2 = MS2, 3 = MS3, 4 = ZOOM-HR. Default: 2
+        --isotype <string>     # Isobaric quantification type. Case insensitive. Support iTRAQ-4, iTRAQ-8, TMT-0, TMT-2, TMT-6, TMT-10, TMT-11, TMT-16, TMT-18, TMT-35, sCLIP-6, iBT-16, DiLeu-12, DiLeu-1, DeAla-13, iodoTMT-6. Default: TMT-10
         --annotation <string>  # Annotation file info for the isobaric quantification. Format: <path to psm.tsv>=<path to annotation file>. One --annotation indicates one annotation file and can have multiple --annotation. Default: <blank>
         --site-reports 0/1     # Generate site reports. 0 = no, 1 = yes. The psm.tsv need to have the modification localization modification columns. Default: 1
         --msstats 0/1          # Generate MSstats input files. 0 = no, 1 = yes. Default: 0
@@ -93,7 +93,7 @@ Options:
         --locprob <float>      # Localization probability threshold. Default: 0
         --filelist <string>    # A file containing flags. Default: <blank>
         --uniqueness 0/1/2     # Peptide-protein uniqueness. 0 = unique+razor, 1 = unique only, 2 = all. Default: 0
-        --intensitymode 0/1    # The mode to calculate the ion intensity. 0 = apex, 1 = area. Default: 0
+        --intensitymode 0/1/2  # The mode to calculate the ion intensity. 0 = apex, 1 = area, 2 = auto. Default: 2
         --modlist <string>     # A file lists modification masses. Those masses are used to remove the mass discrepancy due to rounding errors. Default: <blank>
 ```
 

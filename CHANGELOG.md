@@ -1,4 +1,13 @@
+## 1.11.18 - 2025-12-24
+- Require Java 11+
+- Add Astral Zoom TMT support
+- Add an option "auto" to the intensity mode
+- Add iodoTMT-6 label
+- Ignore the proteins that are not in the psm.tsv file. Those proteins may have been filtered out by PTM-Shepherd.
+- Various bug fixes and improvements
+
 ## 1.11.11 - 2025-06-30
+- Require Java 11+
 - Various bug fixes and improvements
 
 
