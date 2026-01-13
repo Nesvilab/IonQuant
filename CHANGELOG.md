@@ -1,3 +1,10 @@
+## 1.11.20 - 2026-01-13
+- Require Java 11+
+- Fix a bug not including the MBC ions when generating the results
+- Fix a bug recording incorrect ion-level ion mobility end in the report
+- Fix a bug when analyzing ddaPASEF data
+- Improve the labeled peptides written to the "light/medium/heavy modified peptide"
+
 ## 1.11.18 - 2025-12-24
 - Require Java 11+
 - Add Astral Zoom TMT support
@@ -9,7 +16,6 @@
 ## 1.11.11 - 2025-06-30
 - Require Java 11+
 - Various bug fixes and improvements
-
 
 ## 1.11.9 - 2025-05-03
 - Require Java 11+
